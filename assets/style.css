@@ -1,0 +1,22 @@
+nav{
+     background-color: #06131f;
+     height: 70px;
+}
+
+#logo{
+     width: 70px;
+} 
+
+main{
+     background-color: #1d2d3c;
+}
+
+#container-card{
+     background-color: #112030;
+}
+
+#card{
+     width: 100;
+     height: 150px;
+}
+

@@ -1,24 +1,22 @@
 const { createApp } = Vue
 
 createApp({
-  data() {
-    return {
-     api: 'server.php',
-     data: '',
-    }
-  },
-
-  methods: {
-     chiamataApi(){
-          axios.get(this.api)
-               .then((res) => {
+    data() {
+        return {
+        apiUrl : 'server.php',
+        data : '',
+        }
+    },
+    methods: {
+        chiamataApi(){
+            axios.get( this.apiUrl )
+                 .then( (res) => {
                     this.data = res.data;
-               });
-     },
-  },
-
-  mounted(){
-     this.chiamataApi();
-  },
-
+                 } );
+        }
+        
+    },
+    mounted(){
+        this.chiamataApi()
+    }
 }).mount('#app')
